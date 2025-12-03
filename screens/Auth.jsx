@@ -1,24 +1,25 @@
 
 import React, { useState } from "react";
-import { View, StyleSheet, Image } from "react-native";
+import { View, Image, Text } from "react-native";
 import LoginForm from "../components/LoginForm";
 import RegisterForm from "../components/RegisterForm";
 import logo from "../assets/my-logo.png";
-import { authStyles as styles } from "../styles/authStyles"; // ✅ Importa los estilos
+import { authStyles as styles } from "../styles/authStyles";
 
 export default function Auth() {
-  // ✅ Estado para alternar entre formulario de login y registro
   const [showLogin, setShowLogin] = useState(true);
 
-  // ✅ Cambia el formulario mostrado (login ↔ registro)
   const changeForm = () => setShowLogin(!showLogin);
 
   return (
     <View style={styles.container}>
-      {/* ✅ Logo de la aplicación */}
+      {/* Logo */}
       <Image source={logo} style={styles.logo} />
 
-      {/* ✅ Render condicional: muestra LoginForm o RegisterForm */}
+      {/* Título llamativo */}
+      <Text style={styles.title}>StockDigital</Text>
+
+      {/* Formulario */}
       {showLogin ? (
         <LoginForm changeForm={changeForm} />
       ) : (
@@ -27,5 +28,3 @@ export default function Auth() {
     </View>
   );
 }
-
-

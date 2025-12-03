@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "482283257530",
+    "firebase_url": "https://myapp-704ed-default-rtdb.firebaseio.com",
+    "project_id": "myapp-704ed",
+    "storage_bucket": "myapp-704ed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482283257530:android:f568cff8fd96b1b1da0c83",
+        "android_client_info": {
+          "package_name": "com.ramirovega.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKB1AhpT-qpF5bbaWPiEQJClnyoNTtGsU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,31 +1,44 @@
 
 import React, { useState, useEffect } from "react";
-import { StyleSheet, View } from "react-native";
-import { Provider as PaperProvider } from "react-native-paper";
+import { StyleSheet } from "react-native";
+import { Provider as PaperProvider, MD3DarkTheme } from "react-native-paper";
 import Auth from "./screens/Auth";
+
 import Home from "./screens/Home";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebaseConfig";
 
+const theme = {
+  ...MD3DarkTheme,      // Base MD3 en dark
+  dark: true,
+  colors: {
+    ...MD3DarkTheme.colors,
+    primary: "#000000",        // Botón/acentos negros
+    onPrimary: "#ffffff",      // Texto sobre primary
+    background: "#121212",     // Fondo general oscuro
+    onBackground: "#ffffff",   // Texto en fondo
+    surface: "#1E1E1E",        // Tarjetas/inputs
+    onSurface: "#ffffff",      // Texto en surface
+    outline: "#3A3A3A",        // Borde cuando NO está enfocado
+    // 👇 Estos dos hacen que labels/placeholders se vean translúcidos y suaves
+    onSurfaceVariant: "rgba(255,255,255,0.6)",
+    placeholder: "rgba(255,255,255,0.6)",
+  },
+};
+
 export default function App() {
-  // ✅ Estado para saber si hay un usuario autenticado
   const [user, setUser] = useState(null);
 
-  // ✅ Detecta cambios en la sesión del usuario (login/logout)
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser); // Si hay usuario, lo guarda en el estado
+      setUser(currentUser);
     });
-    return unsubscribe; // Limpia el listener cuando el componente se desmonta
+    return unsubscribe;
   }, []);
 
   return (
-    // ✅ PaperProvider: provee estilos y componentes de react-native-paper
-    <PaperProvider>
-      <View style={styles.container}>
-        {/* ✅ Si hay usuario autenticado, muestra Home; si no, muestra Auth */}
-        {user ? <Home user={user} /> : <Auth />}
-      </View>
+    <PaperProvider theme={theme}>
+      {user ? <Home user={user} /> : <Auth />}
     </PaperProvider>
   );
 }
@@ -33,7 +46,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    justifyContent: "center", // Centra contenido verticalmente
+    // Usa el color del tema mejor que "#fff"
+    backgroundColor: theme.colors.background,
+    justifyContent: "center",
   },
 });

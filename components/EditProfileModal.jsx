@@ -34,7 +34,7 @@ export default function EditProfileModal({ visible, onDismiss, newUsername, setN
         </Button>
 
         {/* ✅ Botón para cancelar y cerrar el modal */}
-        <Button mode="outlined" onPress={onDismiss} style={styles.cancel}>
+        <Button mode="contained" onPress={onDismiss} style={styles.cancel}>
           Cancelar
         </Button>
       </Modal>

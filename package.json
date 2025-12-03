@@ -1,16 +1,21 @@
+
 {
   "name": "my-app",
   "version": "1.0.0",
   "main": "index.js",
+  "private": true,
+  "packageManager": "npm@10.0.0",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native-firebase/app": "^23.5.0",
     "expo": "~54.0.23",
+    "expo-dev-client": "~6.0.18",
     "expo-file-system": "~19.0.19",
     "expo-image-picker": "~17.0.8",
     "expo-status-bar": "~3.0.8",
@@ -18,14 +23,13 @@
     "formik": "^2.4.9",
     "react": "19.1.0",
     "react-native": "0.81.5",
-    "react-native-get-random-values": "^2.0.0",
+    "react-native-get-random-values": "~1.11.0",
     "react-native-paper": "^5.14.5",
     "react-native-safe-area-context": "^5.6.2",
     "react-native-vector-icons": "^10.3.0",
     "uuid": "^13.0.0",
     "yup": "^1.7.1"
   },
-  "private": true,
   "devDependencies": {
     "@react-native-community/cli": "^20.0.2"
   }

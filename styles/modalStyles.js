@@ -3,26 +3,48 @@ import { StyleSheet } from "react-native";
 
 export const modalStyles = StyleSheet.create({
   modal: {
-    backgroundColor: "#fff", // Fondo blanco
+    backgroundColor: "#1E1E1E", // Fondo oscuro
     padding: 20,
     borderRadius: 10,
     marginHorizontal: 20,
-    alignItems: "center", // Centra el contenido
   },
   title: {
     fontSize: 18,
     fontWeight: "bold",
+    color: "#fff",
     marginBottom: 15,
+    textAlign: "center",
+  },
+  subtitle: {
+    fontSize: 16,
+    color: "#fff",
+    marginBottom: 10,
+    marginTop: 10,
   },
   input: {
-    width: "100%",
+    marginBottom: 15,
+    backgroundColor: "#1E1E1E",
+    color: "#fff",
+  },
+  iconList: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "center",
     marginBottom: 15,
   },
+  iconButton: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    backgroundColor: "#222",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 5,
+  },
   button: {
-    width: "100%",
     marginBottom: 10,
   },
   cancel: {
-    width: "100%",
+    marginTop: 5,
   },
 });
