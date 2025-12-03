@@ -109,5 +109,10 @@ PASOS PARA CORRER
 ¿O lo dejamos solo con texto y pasos?
 
 imagenes
-https://github.com/ramirovegam/myapp-movilCRUD/blob/047846eae590e48d71597c889c749f87005299a9/images/Multimedia.jpg
-https://github.com/ramirovegam/myapp-movilCRUD/blob/047846eae590e48d71597c889c749f87005299a9/images/Multimedia%20(1).jpg
+Puedes ver una vista previa de la aplicación a continuación:
+<img width="1289" height="938" alt="image" src="https://github.com/ramirovegam/myapp-movilCRUD/blob/047846eae590e48d71597c889c749f87005299a9/images/Multimedia.jpg"/>
+<img width="1289" height="938" alt="image" src="https://github.com/ramirovegam/myapp-movilCRUD/blob/047846eae590e48d71597c889c749f87005299a9/images/Multimedia%20(1).jpg"/>
+<img width="1289" height="938" alt="image" src="https://github.com/ramirovegam/myapp-movilCRUD/blob/047846eae590e48d71597c889c749f87005299a9/images/Multimedia%20(2).jpg"/>
+<img width="1289" height="938" alt="image" src="https://github.com/ramirovegam/myapp-movilCRUD/blob/047846eae590e48d71597c889c749f87005299a9/images/Multimedia%20(3).jpg"/>
+
+
