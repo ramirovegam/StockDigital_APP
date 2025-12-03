@@ -108,11 +108,12 @@ PASOS PARA CORRER
 ¿Quieres que también te prepare **una sección para el README con capturas de pantalla o un GIF mostrando la app en funcionamiento**?  
 ¿O lo dejamos solo con texto y pasos?
 
-imagenes
-Puedes ver una vista previa de la aplicación a continuación:
-<img width="1289" height="938" alt="image" src="https://github.com/ramirovegam/myapp-movilCRUD/blob/047846eae590e48d71597c889c749f87005299a9/images/Multimedia.jpg"/>
-<img width="1289" height="938" alt="image" src="https://github.com/ramirovegam/myapp-movilCRUD/blob/047846eae590e48d71597c889c749f87005299a9/images/Multimedia%20(1).jpg"/>
-<img width="1289" height="938" alt="image" src="https://github.com/ramirovegam/myapp-movilCRUD/blob/047846eae590e48d71597c889c749f87005299a9/images/Multimedia%20(2).jpg"/>
-<img width="1289" height="938" alt="image" src="https://github.com/ramirovegam/myapp-movilCRUD/blob/047846eae590e48d71597c889c749f87005299a9/images/Multimedia%20(3).jpg"/>
+## 📷 **Capturas de pantalla**
 
+<p align="center">
+  https://raw.githubusercontent.com/ramirovegam/myapp-movilCRUD/main/images/Multimedia.jpg
+  https://raw.githubusercontent.com/ramirovegam/myapp-movilCRUD/main/images/Multimedia%20(1).jpg
+  https://raw.githubusercontent.com/ramirovegam/myapp-movilCRUD/main/images/Multimedia%20(2).jpg
+  https://raw.githubusercontent.com/ramirovegam/myapp-movilCRUD/main/images/Multimedia%20(3).jpg
+</p>
 
